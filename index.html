@@ -1,276 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="./styles.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Get schooled</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Ksyv's Portfolio site</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon-16x16.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
-    <header>
-        <div id="header-div">
-            <img src="images/logo.png" alt="Smile School logo">
-            <div id="header-menu">
-                <a href="">COURSES</a>
-                <a href="">PRICING</a>
-                <a href="">LOGIN</a>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/mod2.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Kevin Viais</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://github.com/ksyv" class="github"><i class="bi bi-github"></i></a>
+      <a href="#contact" class="envelope-at"><i class="bi bi-envelope-at"></i></a>
+      <a href="https://medium.com/@ksyv" class="medium"><i class="bi bi-medium"></i></a>
+      <a href="https://www.linkedin.com/in/kevin-viais" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#skills"><i class="bi bi-tools navicon"></i> Stack & Tools</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section sand-background">
+
+      <img src="assets/img/martin-martz-iup5cbdUVxQ-unsplash.jpg" alt="" data-aos="fade-in" class="">
+      <p class="image-source">Photo de <a href="https://unsplash.com/fr/@martz90?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Martin Martz</a> sur <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Kevin Viais</h2>
+        <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, 3D Printer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/mod2.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2> Full Stack Developer</h2>
+            <p class="fst-italic">
+              Full-stack developer with a strong interest in the Javascript ecosystem (Node, mongo, angular...)
+            </p>
+            <p class="fst-italic">
+              Currently a technical coach for future developers at @Holberton School Thonon-les-bains, <br>
+              I deepen my knowledge of full-stack web and app development through a work-study program with the same school.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>13 july 1989</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+336 32 75 27 10</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Lully (Fr)</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>35</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ksyviais@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
             </div>
+            <p> <br>Open to any project that would allow me to take on challenges and sharpen my skills, whether short, medium or long term, for fun, profit or human (or all at once!)
+          </div>
         </div>
-    </header>
-    <main>
-        <section id="banner-section">
-            <div>
-                <h1>Get schooled</h1>
-                <p id="subtitle">
-                    <span>SMILES</span>
-                    <span>GRIN</span>
-                    <span>LAUGH</span>
-                </p>
-                <button id="banner-register-button" class="register-button">REGISTER FOR FREE</button>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <section id="skills" class="skills section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      </div><div class="container" data-aos="fade-up"> 
+        <div class="row"> 
+    
+          <div class="col-lg-4 col-md-6"> 
+            <h3>Back-end</h3>
+            <div class="skills-content"> 
+              <img src="assets/img/icons/C.png" alt="C">
+              <img src="assets/img/icons/Python.png" alt="Python">
+              <img src="assets/img/icons/Node.js.png" alt="Node.js">
+              <img src="assets/img/icons/Flask.png" alt="Flask">
+              <img src="assets/img/icons/MongoDB.png" alt="MongoDB">
+              <img src="assets/img/icons/Express.png" alt="Express.js">
+              <img src="assets/img/icons/MySQL.png" alt="SQL">
+              <img src="assets/img/icons/SQLAlchemy.png" alt="SQLAchemy">
             </div>
-            <div id="pros-div">
-                <h2><span>Learn</span> from the pros</h2>
-                <div id="pros-quotes-div">
-                    <div>
-                        <img class="round-edge" src="images/1.png" alt="Phillip's photo">
-                        <h3>Phillip Massey</h3>
-                        <p>
-                            « Smile of the year »
-                            <br>
-                            2018 - 2019
-                        </p>
-                    </div>
-                    <div>
-                        <img class="round-edge" src="images/6.png" alt="Nannie's photo">
-                        <h3>Nannie Lawrence</h3>
-                        <p>
-                            Best « little smile »
-                            <br>
-                            2017
-                        </p>
-                    </div>
-                    <div>
-                        <img class="round-edge" src="images/7.png" alt="Bruce's photo">
-                        <h3>Bruce Walters</h3>
-                        <p>
-                            Best « Friend Smile »
-                            <br>
-                            live performance 2019
-                        </p>
-                    </div>
-                    <div>
-                        <img class="round-edge" src="images/8.png" alt="Henry's photo">
-                        <h3>Henry Hughes</h3>
-                        <p>
-                            « 24h smiles » winner
-                            <br>
-                            2016 - 2019
-                        </p>
-                    </div>
-                </div>
+          </div>
+    
+          <div class="col-lg-4 col-md-6">
+            <h3>Front-end</h3>
+            <div class="skills-content"> 
+              <img src="assets/img/icons/HTML5.png" alt="HTML">
+              <img src="assets/img/icons/CSS3.png" alt="CSS">
+              <img src="assets/img/icons/JavaScript.png" alt="Javascript">
+              <img src="assets/img/icons/Bootstrap.png" alt="Bootstrap">
+              <img src="assets/img/icons/Angular.png" alt="Angular">
+              <img src="assets/img/icons/Markdown.png" alt="Markdown">
+              <img src="assets/img/icons/Sass.png" alt="Sass/Scss">
+              <img src="assets/img/icons/jQuery.png" alt="JQuery">
             </div>
-        </section>
-        
-        <section id="quote-section">
-            <div id="quote-div">
-                <div id="quote-image">
-                    <img class="round-edge" src="images/testimony_profile.png" alt="weather presenter's photo">
-                </div>
-                <div id="quote-text">
-                    <blockquote>
-                        « Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun!
-                    </blockquote>
-                    <p id="quote-author">Person Name</p>
-                    <p id="quote-author-profession">weather presenter</p>
-                </div>
+          </div>
+    
+          <div class="col-lg-4 col-md-6">
+            <h3>Tools</h3>
+            <div class="skills-content"> 
+              <img src="assets/img/icons/Git.png" alt="Git">
+              <img src="assets/img/icons/GitHub.png" alt="Github">
+              <img src="assets/img/icons/Docker.png" alt="Docker">
+              <img src="assets/img/icons/Bash.png" alt="Bash">
+              <img src="assets/img/icons/Powershell.png" alt="Powershell">
+              <img src="assets/img/icons/Slack.png" alt="Slack">
+              <img src="assets/img/icons/Visual Studio Code (VS Code).png" alt="VSCode">
+              <img src="assets/img/icons/Flutter.png" alt="Flutter">
+              <img src="assets/img/icons/Android Studio.png" alt="ANdroïdeStudio">
             </div>
-        </section>
-
-        <section>
-            <h1>Most <span>popular</span> tutorials</h1>
-
-            <div class="vd-block">
-
-                <div class="vd">
-                    <div class="player_container">
-                        <img src="./images/Bitmap.png" alt="Image" />
-                        <img class="player" src="./images/play.png" alt="play img">
-                    </div>
-                    <h2>Diagonal Smile</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consect adipiscing elit,
-                        sed do eiusmod.
-                    </p>
-
-                    <div class="vd-author">
-                        <img class="round-edge" src="./images/1.png" alt="Image" />
-                        <h3>Phillip Massey</h3>
-                    </div>
-
-                    <div class="vd-rat">
-                        <div>
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/blank_star.png" alt="Star" />
-                        </div>
-                        <p>8 min</p>
-                    </div>
-                </div>
-
-
-                <div class="vd">
-                    <div class="player_container">
-                        <img src="./images/Bitmap2.png" alt="Image" />
-                        <img class="player" src="./images/play.png" alt="play img">
-                    </div>
-                    <h2>Sad Smile</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consect adipiscing elit,
-                        sed do eiusmod.
-                    </p>
-
-                    <div class="vd-author">
-                        <img class="round-edge"src="./images/1.png" alt="Image" />
-                        <h3>Phillip Massey</h3>
-                    </div>
-
-                    <div class="vd-rat">
-                        <div>
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/blank_star.png" alt="Star" />
-                        </div>
-                        <p>8 min</p>
-                    </div>
-                </div>
-
-                <div class="vd">
-                    <div class="player_container">
-                        <img src="./images/Bitmap3.png" alt="Image" />
-                        <img class="player" src="./images/play.png" alt="play img">
-                    </div>
-                    <h2>Natural Smile</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consect adipiscing elit,
-                        sed do eiusmod.
-                    </p>
-
-                    <div class="vd-author">
-                        <img class="round-edge" src="./images/1.png" alt="Image" />
-                        <h3>Phillip Massey</h3>
-                    </div>
-
-                    <div class="vd-rat">
-                        <div>
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/blank_star.png" alt="Star" />
-                        </div>
-                        <p>8 min</p>
-                    </div>
-                </div>
-
-                <div class="vd">
-                    <div class="player_container">
-                        <img src="./images/Bitmap4.png" alt="Image" />
-                        <img class="player" src="./images/play.png" alt="play img">
-                    </div>
-                    <h2>Happy Smile</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consect adipiscing elit,
-                        sed do eiusmod.
-                    </p>
-
-                    <div class="vd-author">
-                        <img class="round-edge" src="./images/1.png" alt="Image" />
-                        <h3>Phillip Massey</h3>
-                    </div>
-
-                    <div class="vd-rat">
-                        <div>
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/star.png" alt="Star" />
-                            <img src="./images/blank_star.png" alt="Star" />
-                        </div>
-                        <p>8 min</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="membership-section">
-            <h1><span>Free</span> membership</h1>
-            <div id="memberships-list">
-                <div class="membership">
-                    <img src="images/smile.png" alt="Smile School's logo, without text">
-                    <h2>Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="membership">
-                    <img src="images/smile.png" alt="Smile School's logo, without text">
-                    <h2>Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="membership">
-                    <img src="images/smile.png" alt="Smile School's logo, without text">
-                    <h2>Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="membership">
-                    <img src="images/smile.png" alt="Smile School's logo, without text">
-                    <h2>Lorem ipsum</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-            <button id="membership-register-button" class="register-button">REGISTER FOR FREE</button>
-        </section>
-
-        <section id="FAQ-section">
-            <h1>F.A.Q.</h1>
-            <div id="FAQ-content">
-                <div class="FAQ-row-block">
-                    <div class="FAQ-item-block">
-                        <h2 class="FAQ-question">How does this work?</h2>
-                        <p class="FAQ-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div class="FAQ-item-block">
-                        <h2 class="FAQ-question">How does this work?</h2>
-                        <p class="FAQ-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-                <div class="FAQ-row-block">
-                    <div class="FAQ-item-block">
-                        <h2 class="FAQ-question">How does this work?</h2>
-                        <p class="FAQ-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <div class="FAQ-item-block">
-                        <h2 class="FAQ-question">How does this work?</h2>
-                        <p class="FAQ-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footerbar_container">
-            <div class="footerbar">
-                <img class="footer_logo" src="./images/logo.png" alt="Footer logo">
-                <div class="socials">
-                    <a href=""><img src="./images/Facebook_White.png" alt="Facebook"></a>
-                    <a href=""><img src="./images/Twitter_White.png" alt="Twitter"></a>
-                    <a href=""><img src="./images/Instagram_White.png" alt="Instagram"></a>
-                </div>
-            </div>
-            <p>©smileschool 2020</p>
+          </div>
+    
         </div>
-    </footer>
+      </div>
+      <br><br>
+      <div class="container" data-aos="fade-up">
+        <h3>Certifications</h3>
+        <div class="certifications-content">
+          <a href="https://www.credly.com/badges/e2340cd9-89d6-486b-8d53-89daa2e2eb98/linked_in_profile" target="_blank">
+            <img src="assets/img/icons/OpenSourceFoundationsIbmBadge.png" alt="Certification 1">
+          </a>
+          <a href="https://www.credly.com/badges/9711a908-98b9-4f0d-9d23-705133f6d0cb/linked_in_profile" target="_blank">
+            <img src="assets/img/icons/AgileExplorerIbmBadge.png" alt="Certification 2">
+          </a>
+          <a href="assets/img/icons/essentiel de python linkedin.jpg" data-fancybox="gallery">
+            <img src="assets/img/icons/essentiel de python linkedin.jpg" alt="Certification 2">
+          </a>
+          <a href="assets/img/icons/essentiel de sql linkedin.jpg" data-fancybox="gallery">
+            <img src="assets/img/icons/essentiel de sql linkedin.jpg" alt="Certification 2">
+          </a>
+          
+        </div>
+        <p align="center">Click on each certification to verify it!</p>
+      </div>
+    
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Foundations of IT development</h4>
+              <p><em>RNCP 5 - Web and mobile web developer</em></p>
+              <h5>2023 - 2024</h5>
+              <p><em>Holbertonschool, Thonon-les-bains</em></p>
+              <ul>
+                <li>Mastery of versioning and collaborative work with Git and GitHub</li>
+                <li> Use of Bash</li>
+                <li>General notions: sorting algorithm, binary trees, regex, Network,
+                Web infrastructure design</li>
+                <li>C knowledge (pointers, recursion, library, memory allocation, preprocessor operation, variadic function, bit manipulation, I/O, linked lists, etc.)</li>
+                <li>Python knowledge (import and modules, data structures, exceptions, classes, inheritance, I/O, serialization/deserialization, relational mapping, web framework, RESTful API).</li>
+                <li>Javascript knowledge (objects, scopes and closure, web scraping, javascript in back-end with node-JS, etc.)</li>
+                <li>HTML and CSS knowledge</li>
+                <li>Database knowledge (SQL and NoSQL)</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>DUT Carrières sociales ASSC</h4>
+              <h5>2010 - 2012</h5>
+              <p><em>IUT Université Montaigne, Bordeaux III</em></p>
+              
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Coach Software Engineer</h4>
+              <h5>2024 - Present</h5>
+              <p><em>HolbertonSchool, Thonon-les-bains </em></p>
+              <ul>
+                <li>Provide technical mentoring on web technologies to students</li>
+                <li>Communicate through various means and formats: chat, audio, video, one-on-one and group</li>
+                <li>Research and understand web trends</li>
+                <li>Design and update curriculum projects to enable students to acquire in-demand web skills</li>
+              </ul>
+            </div> 
+            <div class="resume-item">
+              <h4>Youth and Community Development Manager</h4>
+              <h5>2012 - 2023</h5>
+              <p><em>Various organizations, Gironde & Haute-Savoie</em></p>
+              <ul>
+                <li>Led and managed teams of youth workers and educators, fostering a collaborative and supportive environment.</li> 
+                <li>Developed and implemented youth programs and activities, adapting to diverse audiences and needs.</li>
+                <li>Managed projects from conception to completion, ensuring adherence to deadlines, budgets, and legal requirements.</li>
+                <li>Communicated effectively with children, teenagers, parents, and community stakeholders.</li>
+                <li>Demonstrated strong problem-solving skills and adaptability in dynamic and challenging situations.</li>
+              </ul>
+            </div></div> 
+          </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Product</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-books">Books</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>5 avenue des Allobroges, 74200 Thonon-les-bains</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+33 6 32 75 27 10</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>ksyviais@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2752.960632029614!2d6.476562475812469!3d46.37016907253792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c3e62f494d7eb%3A0x19516b0ff8e8671d!2s5%20Av.%20des%20Allobroges%2C%2074200%20Thonon-les-Bains!5e0!3m2!1sfr!2sfr!4v1736162678365!5m2!1sfr!2sfr" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">ksyviais</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by Kevin Viais with <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
