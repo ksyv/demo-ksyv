@@ -898,6 +898,20 @@ section,
   transform: scale(1.1);
 }
 
+.portfolio-content {
+  position: relative;
+  overflow: hidden;
+  display: flex; 
+  flex-direction: column; 
+  height: 300px; /* Définir une hauteur fixe pour le conteneur */
+}
+
+
+.portfolio-content img {
+  width: 100%;  /* L'image prend 100% de la largeur de la zone de texte */
+  height:50%;
+  object-fit: cover; 
+}
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1278,9 +1292,7 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+
 
 .row {  /* Ou le conteneur parent de vos boîtes de compétences */
   display: flex;
@@ -1343,3 +1355,12 @@ section,
   font-size: 8px !important;
   color: #fff; /* Ou une couleur qui contraste avec votre image */
 }
+
+.portfolio-content {
+  position: relative;
+  overflow: hidden;
+  display: flex; 
+  flex-direction: column; 
+  height: 300px; /* Définir une hauteur fixe pour le conteneur */
+}
+
