@@ -1364,59 +1364,40 @@ section,
   height: 300px; /* Définir une hauteur fixe pour le conteneur */
 }
 
-/* Custom styles for portfolio links to arrange them side-by-side */
-/* Ces règles surchargent celles du template si nécessaire ou les complètent */
-.portfolio .portfolio-content .portfolio-info .project-link,
-.portfolio .portfolio-content .portfolio-info .github-link {
-    /* Retire le positionnement absolu par défaut des "details-link" et "preview-link" pour gérer un groupe */
-    position: static;
-    display: inline-block; /* Pour qu'ils soient côte à côte mais puissent avoir marge/padding */
-    transform: none; /* Annule le transform: translateY(-50%) */
-    top: auto; /* Annule le top: 50% */
-    left: auto; /* Annule le left: calc(50% - 40px) ou left: 50% */
-    margin: 0 5px; /* Petit espace entre les boutons */
-    font-size: 26px; /* Taille commune des icônes */
-    line-height: 1.2;
-    padding: 0; /* Assure-toi qu'il n'y a pas de padding indésirable */
-    width: auto; /* Laisse la largeur s'adapter au contenu */
-}
-
-/* Centre le groupe de liens */
-.portfolio .portfolio-content .portfolio-info .portfolio-links-group {
-    position: absolute; /* Positionne le groupe de liens */
-    top: 50%;
+/* --- Styles spécifiques pour la vignette "Cheat Sheet Platform" --- */
+/* Cible la div .portfolio-links UNIQUEMENT dans les éléments .portfolio-item.filter-app */
+.portfolio-item.filter-app .portfolio-links {
+    position: absolute; /* Conserve le positionnement absolu du groupe de liens */
     left: 0;
     right: 0;
+    top: 50%;
     transform: translateY(-50%);
-    text-align: center; /* Centre les éléments inline-block */
-    white-space: nowrap; /* Empêche le retour à la ligne des boutons */
+    
+    display: flex; /* Active Flexbox pour arranger les liens */
+    justify-content: center; /* Centre les liens horizontalement */
+    align-items: center; /* Centre les liens verticalement */
+    gap: 20px; /* Ajoute un espace entre les boutons */
+    white-space: nowrap; /* Empêche les boutons de passer à la ligne */
     z-index: 4; /* Assure qu'ils sont au-dessus de l'image */
 }
 
-/* Si tu veux juste les deux liens (projet et code), utilise ces règles */
-.portfolio .portfolio-content .portfolio-info .details-link { /* Cible le lien principal du projet */
-    position: absolute;
-    left: calc(50% - 40px); /* Décalage pour le premier bouton */
-    font-size: 26px; /* Taille des icônes */
-    top: calc(50% - 14px);
-    color: #fff;
-    transition: 0.3s;
+/* Réinitialise le positionnement absolu pour les liens à l'intérieur de .portfolio-links
+   UNIQUEMENT pour la vignette "Cheat Sheet Platform" */
+.portfolio-item.filter-app .portfolio-links .details-link,
+.portfolio-item.filter-app .portfolio-links .github-link {
+    position: static !important; /* Force le positionnement statique pour qu'ils soient gérés par flexbox */
+    left: auto !important; /* Annule les propriétés 'left' du thème */
+    top: auto !important; /* Annule les propriétés 'top' du thème */
+    transform: none !important; /* Annule les transformations du thème */
+    
+    font-size: 26px; /* Taille des icônes (comme la loupe originale) */
     line-height: 1.2;
-    /* Assure-toi que cette règle n'est pas surchargée par une autre plus générale */
+    color: #fff; /* Couleur par défaut des icônes */
+    transition: 0.3s;
 }
 
-.portfolio .portfolio-content .portfolio-info .github-link { /* Cible le bouton GitHub */
-    position: absolute;
-    left: calc(50% + 10px); /* Positionne ce bouton à droite du premier (40px + 10px d'espace) */
-    font-size: 26px; /* Taille des icônes */
-    top: calc(50% - 14px);
-    color: #fff;
-    transition: 0.3s;
-    line-height: 1.2;
-}
-
-/* Pour le survol, assure-toi que les couleurs changent comme prévu */
-.portfolio .portfolio-content .portfolio-info .project-link:hover,
-.portfolio .portfolio-content .portfolio-info .github-link:hover {
-    color: var(--accent-color);
+/* Styles au survol pour les liens de la Cheat Sheet Platform */
+.portfolio-item.filter-app .portfolio-links .details-link:hover,
+.portfolio-item.filter-app .portfolio-links .github-link:hover {
+    color: var(--accent-color); /* Utilise la couleur d'accent du thème au survol */
 }
