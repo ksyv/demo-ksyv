@@ -1364,3 +1364,26 @@ section,
   height: 300px; /* Définir une hauteur fixe pour le conteneur */
 }
 
+.portfolio-links {
+    position: absolute; /* ou relative */
+    left: 0;
+    right: 0;
+    top: 50%; /* pour centrer verticalement */
+    transform: translateY(-50%); /* pour centrer verticalement */
+    text-align: center; /* si les liens sont inline-block */
+    white-space: nowrap; /* pour éviter le retour à la ligne si les boutons sont trop larges */
+
+    /* OU si c'est en flexbox */
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: center; /* centre verticalement */
+    gap: 10px; /* espace entre les éléments */
+}
+
+.portfolio-links a {
+    /* Styles pour les liens eux-mêmes */
+    display: inline-block; /* ou flex */
+    width: 40px; /* ou autre taille */
+    height: 40px;
+    /* ... autres styles de bouton ... */
+}
